@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>微信登录</title>
+</head>
+<body>
+<style>
+    *{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}html,body{height:100%}body{color:#333;background-color:#fff;overflow-x:hidden;position:relative}.block{display:block !important}.dnone{display:none !important}.fl{float:left}.fr{float:right}@media (min-width:1200px){.container{width:1200px}}.navbar{position:relative;min-height:46px;margin-bottom:20px;border:1px solid transparent}p{margin:0}.left{padding-left:0}.right{padding-right:0}.project-item .project-item-left .project-img{width:46px;height:46px}.project-item .project-item-left .project-img.dwg{background:url(../images/xuebitu-big.png) 0 0 no-repeat}.project-item .project-item-left .project-img.txt{background:url(../images/xuebitu-big.png) -62px 0 no-repeat}.project-item .project-item-left .project-img.zip{background:url(../images/xuebitu-big.png) -122px 0 no-repeat}.project-item .project-item-left .project-img.pdf{background:url(../images/xuebitu-big.png) -184px 0 no-repeat}.project-item .project-item-left .project-img.jpg{background:url(../images/xuebitu-big.png) -245px 0 no-repeat}.project-item .project-item-left .project-img.ppt{background:url(../images/xuebitu-big.png) 0 -58px no-repeat}.project-item .project-item-left .project-img.png{background:url(../images/xuebitu-big.png) -63px -58px no-repeat}.project-item .project-item-left .project-img.excel{background:url(../images/xuebitu-big.png) -124px -58px no-repeat}.project-item .project-item-left .project-img.bmp{background:url(../images/xuebitu-big.png) -185px -58px no-repeat}.project-item .project-item-left .project-img.wps{background:url(../images/xuebitu-big.png) -245px -58px no-repeat}.engineering-img{width:28px;height:28px}.engineering-img.dwg{background:url(../images/xuebitu-small.png) 0 0 no-repeat}.engineering-img.txt{background:url(../images/xuebitu-small.png) -45px 0 no-repeat}.engineering-img.zip{background:url(../images/xuebitu-small.png) -90px 0 no-repeat}.engineering-img.pdf{background:url(../images/xuebitu-small.png) -135px 0 no-repeat}.engineering-img.jpg{background:url(../images/xuebitu-small.png) -181px 0 no-repeat}.engineering-img.ppt{background:url(../images/xuebitu-small.png) 0 -42px no-repeat}.engineering-img.png{background:url(../images/xuebitu-small.png) -45px -42px no-repeat}.engineering-img.excel{background:url(../images/xuebitu-small.png) -90px -42px no-repeat}.engineering-img.bmp{background:url(../images/xuebitu-small.png) -135px -42px no-repeat}.engineering-img.wps{background:url(../images/xuebitu-small.png) -182px -42px no-repeat}.paging{display:-webkit-box;display:-ms-flexbox;display:flex}.paging .pagination{margin:20px auto;padding:20px;text-align:left;color:#ccc;text-align:center}.paging .pagination li.active span{display:inline-block;height:32px;line-height:32px;padding:0 10px;margin:0 3px;color:#fff;background-color:#01aaef;border:1px solid #01aaef;vertical-align:middle}.paging .pagination a{color:#8c8c8c;display:inline-block;height:32px;line-height:32px;padding:0 10px;border:1px solid #ddd;margin:0 3px;vertical-align:middle;float:none;width:auto}.paging .pagination a:hover{text-decoration:none;background-color:#fff;border:1px solid #01aaef;color:#01aaef}.paging .pagination li span.disabled{display:inline-block;height:32px;line-height:32px;padding:0 10px;margin:0 3px;color:#bfbfbf;background:#f2f2f2;border:1px solid #bfbfbf;vertical-align:middle}.collect{cursor:pointer;width:70px;display:-webkit-box;display:-ms-flexbox;display:flex;line-height:21px}.collect .icon{margin-top:3px;width:1em;height:1em;vertical-align:-0.15em;fill:currentColor;overflow:hidden}.collect .collect-text{margin-left:5px}.collect:hover{color:#64bbe6}.collect.active{color:#64bbe6}.project-item{height:80px;padding-left:5px;border-bottom:1px dotted #ccc}.project-item .project-item-left{width:85%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:80px}.project-item .project-item-left .project-text{-webkit-box-flex:1;-ms-flex:1;flex:1;margin-left:13px;line-height:23px}.project-item .project-item-left .project-text .project-title{color:#333;max-width:630px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.project-item .project-item-left .project-text .project-title a{width:100%;height:100%;color:#333;text-decoration:none}.project-item .project-item-left .project-text .project-title a:hover{text-decoration:none;color:#3690f7}.project-item .project-item-left .project-text .project-desc{color:#a4b0bd;font-size:12px}.project-item .project-item-left .project-text .project-desc .project-desc-item{margin-right:10px}.project-item .project-item-left .project-text .project-desc .project-desc-item a{color:#a4b0bd;text-decoration:none}.project-item .project-item-left .project-text .project-desc .project-desc-item a:hover{text-decoration:none}.project-item .project-item-left .project-text .project-desc .project-desc-item a:hover span.user{color:#3690f7;cursor:pointer}.project-item .project-item-left .project-text .project-desc .project-desc-item .img{width:12px;height:12px;margin-right:5px;line-height:20px}.project-item .project-item-left .project-text .project-desc .project-desc-item .img img{width:100%}.project-item .project-item-right{height:80px;width:15%;padding:25px;text-align:right}.project-item .project-item-right .star{display:none;font-size:12px;padding-bottom:3px}.project-item .project-item-right .down-free{width:88px;height:30px;line-height:30px;border:1px solid #01aaef;border-radius:5px;text-align:center;float:right;margin-right:5px}.project-item .project-item-right .down-free a{color:#01aaef;text-decoration:none}.project-item .project-item-right .down-free a:hover{text-decoration:none}.project-item:hover{background-color:#fafafa}.project-item:hover .project-text .project-title{color:#3690f7}.login{display:none;position:relative}.login .login1{width:100%;height:100%;z-index:9;position:fixed;padding-top:10%;background-color:#333;opacity:.6}.login .we-login{z-index:11;background-color:#fff;position:absolute;left:40%;top:40%;width:358px;margin:auto;margin-top:10%;text-align:center}.login .we-login .login-title{font-size:14px;color:#333;line-height:60px}.login .we-login .img-warp{width:200px;height:200px;border:1px solid #eee;margin:10px auto}.login .we-login .img-warp .login-img{width:180px;height:180px;margin:10px auto;background-size:cover}.login .we-login .login-desc{height:61px;margin-top:60px;background-color:#f0f6ff;vertical-align:middle;line-height:60px;color:#333}.login .we-login .login-desc p{line-height:60px;font-size:18px}.login .we-login .close{position:absolute;top:0;right:2px;color:#555;font-size:20px;display:none}.login .we-login:hover .close{display:block}
+    .login{width:100%;height:100%;position:fixed;background-color:#333}.login .we-login{background-color:#333;width:400px;margin:auto;top:30%;text-align:center}.login .we-login .login-title{font-size:20px;color:#fff;line-height:50px}.login .we-login .login-img{width:281px;height:281px;margin:0 auto}.login .we-login .login-img img{width:100%}.login .we-login .login-desc{width:281px;height:48px;margin:18px auto;background-color:#232323;border:1px solid #191919;border-radius:20px;vertical-align:middle;line-height:20px;color:#fff;-webkit-box-shadow:0 1px 0 0 #444;box-shadow:0 1px 0 0 #444}.login .we-login .login-desc p{line-height:48px}
+</style>
+<div class="login block">
+    <div class="we-login">
+        <p class="login-title">微信登录</p>
+        <div class="login-img">
+            <img src="{$url}" />
+        </div>
+        <div class="login-desc">
+            <p><span>扫码</span>
+                <span>></span>
+                <span>关注</span>
+                <span>></span>
+                <span>登录</span></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var ws = new WebSocket('ws://127.0.0.1:2346');
+    ws.onopen = function (evt) {
+        console.log('connected');
+        ws.send("{$uid}");
+
+        setInterval(function () {
+            ws.send("{$uid}");
+
+        },30000)
+
+    };
+
+    ws.onmessage = function(evt) {
+        console.log("data" + evt.data);
+        var res = JSON.parse(evt.data);
+        if (res.token != '' && res.token != undefined)
+            window.location = 'index/index/index?token=' + res.token;
+    }
+
+    ws.onclose = function (evt) {
+        console.log("disconnecetd");
+
+    };
+
+
+    ws.onerror = function (evt,e) {
+        console.log("errror" + evt.data);
+
+    };
+
+
+</script>
+
+</body>
+
+</html>
